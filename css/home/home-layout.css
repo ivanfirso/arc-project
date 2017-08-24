@@ -1,0 +1,126 @@
+/* ----------------------------------------------
+
+Home: CSS Grid Layout
+
+------------------------------------------------- */
+
+
+/* ---------------
+
+Layout: Container
+
+------------------ */
+.cre-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*Numero de columnas en el layout */
+  grid-template-rows: 300px 150px 300px 150px 150px 150px 150px 150px 150px;
+  grid-gap: 20px;
+}
+
+/* ---------------
+
+Layout: Hero
+
+------------------ */
+.cre-homehero {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  padding: 2%;
+}
+
+/* ---------------
+
+Layout: Main Title
+
+------------------ */
+.cre-hometitle {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+/* ---------------
+
+Layout: Work 1
+
+------------------ */
+.cre-homework-1 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  background: url('/img/buzzworthy.jpg') no-repeat top;
+}
+
+/* ---------------
+
+Layout: Work 2
+
+------------------ */
+.cre-homework-2 {
+  grid-column:  1 / 2;
+  grid-row: 3 / 4;
+  background: url('/img/segalla.jpg') no-repeat top center;
+}
+
+/* ---------------
+
+Layout: Work 3
+
+------------------ */
+.cre-homework-3 {
+  grid-column: 2 / 4;
+  grid-row: 4 / 6;
+  background: url('/img/168582.jpg') no-repeat top center;
+}
+
+/* ---------------
+
+Layout: Work 4
+
+------------------ */
+.cre-homework-4 {
+  grid-column: 2 / 3;
+  grid-row: 6 / 10;
+  background: url('/img/168584.jpg') no-repeat top center;
+}
+
+/* ---------------
+
+Layout: Work 5
+
+------------------ */
+.cre-homework-5 {
+  grid-column: 3 / 4;
+  grid-row: 8 / 10;
+  background: url('/img/segalla.jpg') no-repeat top center;
+}
+
+/* ---------------
+
+Layout: WORK 6
+
+------------------ */
+.cre-homework-6{
+  grid-column: 1 / 2;
+  grid-row: 4 / 8;
+}
+
+/* ---------------
+
+Layout: Acceso About Us
+
+------------------ */
+.cre-homeaboutus {
+  grid-column: 1 / 2;
+  grid-row: 8 / 10;
+  background: url('/img/reunion-1.png') no-repeat top center;
+}
+
+/* ---------------
+
+Layout: Acceso a Contacto
+
+------------------ */
+.cre-homecontact {
+  grid-column: 3 / 4;
+  grid-row: 6 / 8;
+  background: url('/img/alberta.jpg') no-repeat top center;
+}
