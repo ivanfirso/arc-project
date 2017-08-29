@@ -1,0 +1,17 @@
+/* ----------------------------------------------
+
+Home: Fonts
+
+------------------------------------------------- */
+
+
+@font-face {
+ font-family: "Regencie";
+ src: url("../../fonts/RegencieLight.ttf") format("ttf");
+}
+
+
+@font-face {
+ font-family: "Monument";
+ src: url("../../fonts/Monument_Valley_1.2-Regular.otf") format("otf");
+}
