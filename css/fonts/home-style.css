@@ -3,15 +3,15 @@
 Home: Fonts
 
 ------------------------------------------------- */
-
-
 @font-face {
- font-family: "Regencie";
- src: url("../../fonts/RegencieLight.ttf") format("ttf");
+ font-family: 'Regencie;''
+ src: url("../../fonts/RegencieLight.ttf");
+ font-weight: normal;
 }
 
 
 @font-face {
- font-family: "Monument";
- src: url("../../fonts/Monument_Valley_1.2-Regular.otf") format("otf");
+  font-family: 'Monument';
+  src:  url('../../fonts/Monument_Valley_1.2-Regular.otf');
+  font-weight: normal;
 }
