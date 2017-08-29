@@ -198,7 +198,7 @@ Home: Main Content
 
 
 .acr-font-monument {
-  font-family: "Monument_Valley_1.2", Georgia, Serif;
+  font-family: "Monument", Georgia, Serif;
   text-decoration: underline;
 
 }
@@ -208,23 +208,10 @@ Home: Main Content
   font-weight: 700;
 }
 
-.acr-font-aliquam {
-  font-family: "Aliquam", Georgia, Serif;
-  font-size: 1.2em;
-  font-weight: 700;
-}
-
-.acr-font-fv {
-  font-family: "FashionVictim", Georgia, Serif;
-  text-decoration: underline;
-}
-
 .acr-font-regencie {
   font-family: "Regencie", Georgia, Serif;
   font-weight: 600;
 }
-
-
 
 .acr-layoutgrid {
   display: grid;
