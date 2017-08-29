@@ -5,427 +5,277 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites with CSS Grid</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-
-    <link rel="stylesheet" href="css/home/home-layout.css">
-    <link rel="stylesheet" href="css/home/home-content.css">
-    <link rel="stylesheet" href="css/home/home-settings.css">
-
-
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/home/home-style.css">
   </head>
+
+
+
   <body>
-    <div class="cre">
-      <section class="">
-        <div class="cre-main container">
-          <!-- HERO -->
-          <div class="cre-homehero">
-            <div class="cre-homehero-content">
-              <nav class="navbar is-transparent">
-                <div class="navbar-brand">
-                  <a class="navbar-item" href="http://bulma.io">
-                    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    <section class="acr-hero">
+      <div class="container">
+        <!-- HERO -->
+        <div class="acr-hero-content acr-layoutgrid acr-layoutgrid-hero">
+          <!-- NAVBAR -->
+          <div class="acr-hero-head">
+            <nav class="nav is-transparent has-text-white-bis">
+              <div class="container">
+                <div class="nav-left">
+                  <a class="nav-item" href="../index.html">
+                    <img src="/img/acr-logo-brand-alt.png" alt="Description">
                   </a>
-
-                  <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
-                    <span class="icon" style="color: #333;">
-                      <i class="fa fa-github"></i>
-                    </span>
-                  </a>
-
-                  <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-                    <span class="icon" style="color: #55acee;">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  </a>
-
-                  <div class="navbar-burger burger" data-target="navMenuTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                 </div>
-
-                <div id="navMenuTransparentExample" class="navbar-menu">
-                  <div class="navbar-start">
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link  is-active" href="/documentation/overview/start/">
-                        Docs
-                      </a>
-                      <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item " href="/documentation/overview/start/">
-                          Overview
-                        </a>
-                        <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-                          Modifiers
-                        </a>
-                        <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-                          Columns
-                        </a>
-                        <a class="navbar-item " href="http://bulma.io/documentation/layout/container/">
-                          Layout
-                        </a>
-                        <a class="navbar-item " href="http://bulma.io/documentation/form/general/">
-                          Form
-                        </a>
-                        <a class="navbar-item " href="http://bulma.io/documentation/elements/box/">
-                          Elements
-                        </a>
-
-                          <a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">
-                            Components
-                          </a>
-
-                        <hr class="navbar-divider">
-                        <div class="navbar-item">
-                          <div>
-                            <p class="is-size-6-desktop">
-                              <strong class="has-text-info">0.5.1</strong>
-                            </p>
-
-                              <small>
-                                <a class="bd-view-all-versions" href="/versions">View all versions</a>
-                              </small>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link " href="http://bulma.io/blog/">
-                        Blog
-                      </a>
-                      <div id="blogDropdown" class="navbar-dropdown is-boxed" data-style="width: 18rem;">
-
-                          <a class="navbar-item" href="/2017/08/03/list-of-tags/">
-                            <div class="navbar-content">
-                              <p>
-                                <small class="has-text-info">03 Aug 2017</small>
-                              </p>
-                              <p>New feature: list of tags</p>
-                            </div>
-                          </a>
-
-                          <a class="navbar-item" href="/2017/08/01/bulma-bootstrap-comparison/">
-                            <div class="navbar-content">
-                              <p>
-                                <small class="has-text-info">01 Aug 2017</small>
-                              </p>
-                              <p>Bulma / Bootstrap comparison</p>
-                            </div>
-                          </a>
-
-                          <a class="navbar-item" href="/2017/07/24/access-previous-bulma-versions/">
-                            <div class="navbar-content">
-                              <p>
-                                <small class="has-text-info">24 Jul 2017</small>
-                              </p>
-                              <p>Access previous Bulma versions</p>
-                            </div>
-                          </a>
-
-                        <a class="navbar-item" href="http://bulma.io/blog/">
-                          More posts
-                        </a>
-                        <hr class="navbar-divider">
-                        <div class="navbar-item">
-                          <div class="navbar-content">
-                            <div class="level is-mobile">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <strong>Stay up to date!</strong>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <div class="level-item">
-                                  <a class="button bd-is-rss is-small" href="http://bulma.io/atom.xml">
-                                    <span class="icon is-small">
-                                      <i class="fa fa-rss"></i>
-                                    </span>
-                                    <span>Subscribe</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <div class="navbar-link">
-                        More
-                      </div>
-                      <div id="moreDropdown" class="navbar-dropdown is-boxed">
-                        <a class="navbar-item " href="http://bulma.io/extensions/">
-                          <div class="level is-mobile">
-                            <div class="level-left">
-                              <div class="level-item">
-                                <p>
-                                  <strong>Extensions</strong>
-                                  <br>
-                                  <small>Side projects to enhance Bulma</small>
-                                </p>
-                              </div>
-                            </div>
-                            <div class="level-right">
-                              <div class="level-item">
-                                <span class="icon has-text-info">
-                                  <i class="fa fa-plug"></i>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <a class="navbar-item " href="http://bulma.io/expo/">
-                      <span class="bd-emoji">🎨</span>
-                      Expo
-                    </a>
-                    <a class="navbar-item " href="http://bulma.io/love/">
-                      <span class="bd-emoji">❤️</span>
-                      Love
-                    </a>
-                  </div>
-
-                  <div class="navbar-end">
-                    <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
-                      <span class="icon" style="color: #333;">
-                        <i class="fa fa-github"></i>
-                      </span>
-                    </a>
-                    <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
-                      <span class="icon" style="color: #55acee;">
-                        <i class="fa fa-twitter"></i>
-                      </span>
-                    </a>
-                    <div class="navbar-item">
-                      <div class="field is-grouped">
-                        <p class="control">
-                          <a class="bd-tw-button button"
-                          data-social-network="Twitter"
-                          data-social-action="tweet"
-                          data-social-target="http://bulma.io"
-                          target="_blank"
-                          href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=http://bulma.io&via=jgthms">
-                          <span class="icon">
-                            <i class="fa fa-twitter"></i>
-                          </span>
-                          <span>
-                            Tweet
-                          </span>
-                        </a>
-                        </p>
-                        <p class="control">
-                          <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
-                            <span class="icon">
-                              <i class="fa fa-download"></i>
-                            </span>
-                            <span>Download</span>
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-          <!-- TITLE -->
-          <div class="cre-hometitle cre-content-flexcent">
-            <div class="cre-hometitle-content">
-              <img src="img/logo.png" width="300">
-            </div>
-          </div>
-
-          <!-- WORK 1-->
-          <div class="cre-homework-1 cre-background-size cre-box-shadow">
-            <div class="cre-homework-1-content">
-              <div class="cre-homework-1-title">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="content">
-                      <p>
-                        “There are two hard things in computer science.”
-                      </p>
-                      <p>
-                        WORK 1
-                      </p>
-                    </div>
-                  </div>
+                <span class="nav-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <div class="nav-right nav-menu">
+                  <a class="nav-item has-text-white-bis acr-font-regencie">
+                    Nosotros
+                  </a>
+                  <a class="nav-item has-text-white-bis acr-font-regencie">
+                    Servicios
+                  </a>
+                  <a class="nav-item has-text-white-bis acr-font-regencie">
+                    Proyectos
+                  </a>
+                  <a class="nav-item has-text-white-bis acr-font-regencie">
+                    Privacidad
+                  </a>
+                  <a class="nav-item has-text-white-bis acr-font-regencie">
+                    Contactanos
+                  </a>
                 </div>
               </div>
-              <div class="cre-homework-1-desc cre-content-flexcent">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </nav>
+          </div>
+          <!-- LOGO TITLE -->
+          <div class="acr-hero-body">
+            <div class="acr-body-content acr-layoutgrid acr-layoutgrid-body">
+              <!-- BRAND -->
+              <div class="acr-body-brand acr-layoutflex acr-flexposition-center">
+                <img src="/img/acr-logo.png" alt="main logo">
+              </div>
+              <!-- TITLE -->
+              <div class="acr-body-sitetitl acr-layoutflex acr-flexposition-center">
+                <h1 class="acr-font-monument acr-font-maintitle has-text-white-bis">ACR Edificaciones</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="acr-main">
+      <div class="container">
+        <div class="acr-main-content acr-layoutgrid acr-layoutgrid-main">
+
+          <!-- TITlE 1 -->
+          <div class="acr-main-title1">
+            <div class="acr-title1-content cre-full acr-layoutflex acr-flexposition-center">
+              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Casas Muestras</h1>
+            </div>
+          </div>
+
+          <!-- WORK 1 -->
+          <div class="acr-main-work1">
+            <div class="acr-work1-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work1 acr-image">
+              </div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title">Casa del calvario</p>
+                <p class="subtitle">
+                  - Entrada principal.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- WORK  2-->
-          <div class="cre-homework-2 cre-background-size cre-box-shadow cre-content-flexdown">
-            <div class="cre-homework-2-content">
-              <div class="card">
-                <div class="card-content">
-                  <div class="content">
-                    <p>
-                      “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                    </p>
-                    <p>
-                      WORK 2
-                    </p>
-                  </div>
-                </div>
+          <!-- WORK 2 -->
+          <div class="acr-main-work2">
+            <div class="acr-work2-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work2 acr-image"></div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4">Colinas del Valle</p>
+                <p class="subtitle">
+                  - Entrada a casa.
+                </p>
               </div>
             </div>
           </div>
 
-          <!-- WORK  3-->
-          <div class="cre-homework-3 cre-background-size cre-content-flexdown cre-box-shadow">
-            <div class="cre-homework-3-content">
-              <div class="cre-homework-3-title">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="content">
-                      <p>
-                        “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                      </p>
-                      <p>
-                        WORK 3
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <!-- WORK 3 -->
+          <div class="acr-main-work3">
+            <div class="acr-work3-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work3 acr-image">
               </div>
-            </div>
-          </div>
-
-          <!-- WORK  4 -->
-          <div class="cre-homework-4 cre-background-size cre-content-flexdown cre-box-shadow">
-            <div class="cre-homework-4-content">
-              <div class="card">
-                <div class="card-content">
-                  <div class="content">
-                    <p>
-                      “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                    </p>
-                    <p>
-                      WORK 4
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- WORK  5 -->
-          <div class="cre-homework-5 cre-background-size cre-content-flexdown cre-box-shadow">
-            <div class="cre-homework-5-content">
-              <div class="card">
-                <div class="card-content">
-                  <div class="content">
-                    <p>
-                      “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                    </p>
-                    <p>
-                      WORK 5
-                    </p>
-                  </div>
-                </div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4">Sierra Morena</p>
+                <p class="subtitle">
+                  - Fachada principal.
+                </p>
               </div>
             </div>
           </div>
 
 
+          <!-- PROYECTOS -->
+          <div class="acr-main-projects">
+            <div class="acr-projects-content cre-full acr-image">
+              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4 has-text-white-bis">Visita la Galeria de Proyectos</p>
+                <a class="button is-info">Proyectos</a>
+              </div>
+            </div>
+          </div>
 
+
+          <!-- TITlE 2 -->
+          <div class="acr-main-title2">
+            <div class="acr-title2-content cre-full acr-layoutflex acr-flexposition-center">
+              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Interiores</h1>
+            </div>
+          </div>
+
+
+          <!-- WORK 4 -->
+          <div class="acr-main-work4">
+            <div class="acr-work4-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work4 acr-image">
+              </div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title">Detalles de fuente</p>
+                <p class="subtitle">
+                  - Casa privada.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <!-- WORK 5 -->
+          <div class="acr-main-work5">
+            <div class="acr-work5-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work5 acr-image">
+              </div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4">Iluminacion de escalera</p>
+                <p class="subtitle">
+                  - Casa privada.
+                </p>
+              </div>
+            </div>
+          </div>
           <!-- WORK 6 -->
-          <div class="cre-homework-6 cre-box-shadow">
-            <div class="cre-homework-6-content">
-
-              <div class="cre-homework-6-news cre-background-size cre-content-flexcent">
-                <div class="cre-content-cent">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <p>
-                          Noticias
-                        </p>
-                        <a class="button is-info">Noticias</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="acr-main-work6">
+            <div class="acr-work6-content cre-full acr-layoutgrid-work">
+              <div class="acr-work-image acr-images-work6 acr-image">
               </div>
-              <div class="cre-homework-6-collection cre-background-size">
-                <div class="cre-homework-6-collection-cont cre-content-flexcent">
-                  <p>Edificaciones CR</p>
-                </div>
+              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4">Detalles de escaleras</p>
+                <p class="subtitle">
+                  - Casa privada.
+                </p>
               </div>
             </div>
           </div>
 
-          <!-- ABOUT US -->
-          <div class="cre-homeaboutus cre-background-size cre-content-flexcent cre-box-shadow">
-            <div class="cre-homeaboutus-content cre-content-cent">
-              <div class="card">
-                <div class="card-content">
-                  <div class="content">
-                    <p>
-                      Edificaciones CR
-                    </p>
-                    <a class="button is-info">Nosotros</a>
-                  </div>
-                </div>
+
+          <!-- SERVICIOS -->
+          <div class="acr-main-services">
+            <div class="acr-services-content cre-full acr-image">
+              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-4 has-text-white-bis">Visita la Galeria de Servicios</p>
+                <a class="button is-info">Servicios</a>
               </div>
             </div>
           </div>
 
-          <!-- CONTACT -->
-          <div class="cre-homecontact cre-background-size cre-content-flexcent cre-box-shadow">
-            <div class="cre-homecontact-content cre-content-cent">
-              <div class="card">
-                <div class="card-content">
-                  <div class="content">
-                    <p>
-                      Edificaciones CR
-                    </p>
-                    <a class="button is-info">Contacto</a>
-                  </div>
-                </div>
+          <!-- TITlE 3 -->
+          <div class="acr-main-title3">
+            <div class="acr-title3-content cre-full acr-layoutflex acr-flexposition-center">
+              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Contacto</h1>
+            </div>
+          </div>
+
+          <!-- CONTACTO -->
+          <div class="acr-main-contact">
+            <div class="acr-contact-content cre-full acr-image">
+              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
+                <a class="button is-info">Contacto</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TITlE 4 -->
+          <div class="acr-main-title4">
+            <div class="acr-title4-content cre-full acr-layoutflex acr-flexposition-center">
+              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Nosotros</h1>
+            </div>
+          </div>
+
+          <!-- NOSOTROS -->
+          <div class="acr-main-aboutus">
+            <div class="acr-aboutus-content cre-full acr-image">
+              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
+                <a class="button is-info">Nosotros</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TITlE 5 -->
+          <div class="acr-main-title5">
+            <div class="acr-title5-content cre-full acr-layoutflex acr-flexposition-center">
+              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Aviso de Privacidad</h1>
+            </div>
+          </div>
+
+
+          <!-- NOSOTROS -->
+          <div class="acr-main-privacity">
+            <div class="acr-privacity-content cre-full acr-image">
+              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
+                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
+                <a class="button is-info">Privacidad</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="acr-footer">
+      <div class= "footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+             <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+           </p>
+           <p>
+             <a class="icon" href="https://github.com/jgthms/bulma">
+               <i class="fa fa-github"></i>
+             </a>
+           </p>
+            <div class="acr-footer-content acr-layout-grid">
+              <div class="acr-footer image">
+
+
+              </div>
+              <div class="acr-footer-links">
+
+
+
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="cre-footer">
-        <footer class="footer">
-          <div class="container">
-            <div class="content has-text-centered">
-              <p>
-                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-              </p>
-              <p>
-                <a class="icon" href="https://github.com/jgthms/bulma">
-                  <i class="fa fa-github"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </div>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-
+      </div>
+    </section>
   </body>
 </html>
