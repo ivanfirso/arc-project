@@ -6,245 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACR Edificaciones</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-   <link rel="stylesheet" href="css/fonts/home-style.css">
-   <link rel="stylesheet" href="css/home/home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/fonts/home-style.css">
+    <link rel="stylesheet" href="css/home/home-style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+
   </head>
   <body>
+    <section class="acr-navmain">
+      <div class="container">
+        <nav class="navbar is-transparent">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="http://bulma.io">
+              <img src="/img/acr-logo-alt.png" alt="ACR Edificaciones">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://facebook.com/" target="_blank">
+              <span class="icon" style="color: #333;">
+                <i class="fa fa-facebook"></i>
+              </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+              <span class="icon" style="color: #55acee;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenubd-example">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="navbar-menu ">
+          <!-- navbar start, navbar end -->
+            <a class="navbar-item">
+              Inicio
+            </a>
+            <a class="navbar-item">
+              Nosotros
+            </a>
+            <a class="navbar-item">
+              Servicios
+            </a>
+            <a class="navbar-item">
+              Proyectos
+            </a>
+            <a class="navbar-item">
+              Privacidad
+            </a>
+            <a class="navbar-item">
+              Contacta
+            </a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+
     <section class="acr-hero">
-      <div class="container">
-        <!-- HERO -->
-        <div class="acr-hero-content acr-layoutgrid acr-layoutgrid-hero">
-          <!-- NAVBAR -->
-          <div class="acr-hero-head">
-            <nav class="nav is-transparent has-text-white-bis">
-              <div class="container">
-                <div class="nav-left">
-                  <a class="nav-item" href="../index.html">
-                    <img src="/img/acr-logo-brand-alt.png" alt="Description">
-                  </a>
-                </div>
-                <span class="nav-toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <div class="nav-right nav-menu">
-                  <a class="nav-item has-text-white-bis acr-font-regencie">
-                    Nosotros
-                  </a>
-                  <a class="nav-item has-text-white-bis acr-font-regencie">
-                    Servicios
-                  </a>
-                  <a class="nav-item has-text-white-bis acr-font-regencie">
-                    Proyectos
-                  </a>
-                  <a class="nav-item has-text-white-bis acr-font-regencie">
-                    Privacidad
-                  </a>
-                  <a class="nav-item has-text-white-bis acr-font-regencie">
-                    Contactanos
-                  </a>
-                </div>
-              </div>
-            </nav>
-          </div>
-          <!-- LOGO TITLE -->
-          <div class="acr-hero-body">
-            <div class="acr-body-content acr-layoutgrid acr-layoutgrid-body">
-              <!-- BRAND -->
-              <div class="acr-body-brand acr-layoutflex acr-flexposition-center">
-                <img src="/img/acr-logo.png" alt="main logo">
-              </div>
-              <!-- TITLE -->
-              <div class="acr-body-sitetitl acr-layoutflex acr-flexposition-center">
-                <h1 class="acr-font-monument acr-font-maintitle has-text-white-bis">ACR Edificaciones</h1>
-              </div>
-            </div>
-          </div>
+
+      <div class="w3-content w3-display-container container">
+        <img class="mySlides" src="/img/acr-img-01.jpg" style="width:100%">
+        <img class="mySlides" src="/img/acr-img-02.jpg" style="width:100%">
+        <img class="mySlides" src="/img/acr-img-03.jpg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
       </div>
+
+
     </section>
 
-    <section class="acr-main">
-      <div class="container">
-        <div class="acr-main-content acr-layoutgrid acr-layoutgrid-main">
 
-          <!-- TITlE 1 -->
-          <div class="acr-main-title1">
-            <div class="acr-title1-content cre-full acr-layoutflex acr-flexposition-center">
-              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Casas Muestras</h1>
-            </div>
-          </div>
-
-          <!-- WORK 1 -->
-          <div class="acr-main-work1">
-            <div class="acr-work1-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work1 acr-image">
-              </div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title">Casa del calvario</p>
-                <p class="subtitle">
-                  - Entrada principal.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- WORK 2 -->
-          <div class="acr-main-work2">
-            <div class="acr-work2-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work2 acr-image"></div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4">Colinas del Valle</p>
-                <p class="subtitle">
-                  - Entrada a casa.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- WORK 3 -->
-          <div class="acr-main-work3">
-            <div class="acr-work3-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work3 acr-image">
-              </div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4">Sierra Morena</p>
-                <p class="subtitle">
-                  - Fachada principal.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- PROYECTOS -->
-          <div class="acr-main-projects">
-            <div class="acr-projects-content cre-full acr-image">
-              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4 has-text-white-bis">Visita la Galeria de Proyectos</p>
-                <a class="button is-info">Proyectos</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- TITlE 2 -->
-          <div class="acr-main-title2">
-            <div class="acr-title2-content cre-full acr-layoutflex acr-flexposition-center">
-              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Interiores</h1>
-            </div>
-          </div>
-
-
-          <!-- WORK 4 -->
-          <div class="acr-main-work4">
-            <div class="acr-work4-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work4 acr-image">
-              </div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title">Detalles de fuente</p>
-                <p class="subtitle">
-                  - Casa privada.
-                </p>
-              </div>
-
-            </div>
-          </div>
-          <!-- WORK 5 -->
-          <div class="acr-main-work5">
-            <div class="acr-work5-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work5 acr-image">
-              </div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4">Iluminacion de escalera</p>
-                <p class="subtitle">
-                  - Casa privada.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- WORK 6 -->
-          <div class="acr-main-work6">
-            <div class="acr-work6-content cre-full acr-layoutgrid-work">
-              <div class="acr-work-image acr-images-work6 acr-image">
-              </div>
-              <div class="acr-work-desc acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4">Detalles de escaleras</p>
-                <p class="subtitle">
-                  - Casa privada.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- SERVICIOS -->
-          <div class="acr-main-services">
-            <div class="acr-services-content cre-full acr-image">
-              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-4 has-text-white-bis">Visita la Galeria de Servicios</p>
-                <a class="button is-info">Servicios</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TITlE 3 -->
-          <div class="acr-main-title3">
-            <div class="acr-title3-content cre-full acr-layoutflex acr-flexposition-center">
-              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Contacto</h1>
-            </div>
-          </div>
-
-          <!-- CONTACTO -->
-          <div class="acr-main-contact">
-            <div class="acr-contact-content cre-full acr-image">
-              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
-                <a class="button is-info">Contacto</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TITlE 4 -->
-          <div class="acr-main-title4">
-            <div class="acr-title4-content cre-full acr-layoutflex acr-flexposition-center">
-              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Nosotros</h1>
-            </div>
-          </div>
-
-          <!-- NOSOTROS -->
-          <div class="acr-main-aboutus">
-            <div class="acr-aboutus-content cre-full acr-image">
-              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
-                <a class="button is-info">Nosotros</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TITlE 5 -->
-          <div class="acr-main-title5">
-            <div class="acr-title5-content cre-full acr-layoutflex acr-flexposition-center">
-              <h1 class="acr-font-monument title is-1 has-text-grey-darker">Aviso de Privacidad</h1>
-            </div>
-          </div>
-
-
-          <!-- NOSOTROS -->
-          <div class="acr-main-privacity">
-            <div class="acr-privacity-content cre-full acr-image">
-              <div class="acr-links cre-full acr-layoutflex acr-flexposition-center acr-font-regencie">
-                <p class="title is-5 has-text-white-bis">Visita la Galeria de Servicios</p>
-                <a class="button is-info">Privacidad</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    <section class="acr-main"></section>
 
     <section class="acr-footer">
       <div class= "footer">
@@ -274,6 +120,10 @@
       </div>
     </section>
 
+    <script src="/js/home/acr-home.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      carousel();
+    </script>
 
   </body>
 </html>
