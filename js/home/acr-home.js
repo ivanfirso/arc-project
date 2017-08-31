@@ -1,6 +1,7 @@
 var slideIndex = 1;
 var myIndex = 0
 showDivs(slideIndex);
+carousel();
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -35,5 +36,5 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
