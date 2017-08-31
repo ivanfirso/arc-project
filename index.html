@@ -9,13 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/fonts/home-style.css">
     <link rel="stylesheet" href="css/home/home-style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-    .mySlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    </style>
-
+</style>
   </head>
   <body>
     <section class="acr-navmain">
@@ -72,17 +67,25 @@
 
 
     <section class="acr-hero">
+      <div class="container">
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="/img/slide_1.jpg">
+          <img class="mySlides" src="/img/slide_2.jpg">
+          <img class="mySlides" src="/img/slide_3.jpg">
 
-      <div class="w3-content w3-display-container container">
-        <img class="mySlides" src="/img/02.jpg" style="width:100%">
-        <img class="mySlides" src="/img/03.jpg" style="width:100%">
-        <img class="mySlides" src="/img/04.jpg" style="width:100%">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="/img/slide_1.jpg" style="width:100%">
+            <img class="mySlides" src="/img/slide_2.jpg" style="width:100%">
+            <img class="mySlides" src="/img/slide_3.jpg" style="width:100%">
+
+
+
+            <div class="acr-slideshow-buttons  w3-text-white w3-display-bottommiddle" style="width:100%">
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -90,7 +93,52 @@
     </section>
 
 
-    <section class="acr-main"></section>
+    <section class="acr-main">
+      <div class="acr-main-title container">
+        <div class="acr-title-content cre-full acr-flexcontent acr-flexposition-center">
+          <h1 class="acr-font-browa">ACR Edificaciones</h1>
+        </div>
+        <hr class="acr-hr">
+      </div>
+
+      <div class="acr-main-content container">
+        <div class="acr-main-projects">
+          <div class="acr-projects-content cre-full acr-gridcontent">
+            <div class="acr-projects-desc acr-gridcontent-desc">
+              <h1>Construcción</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="acr-projects-img acr-gridcontent-img">
+              <img src="../../img/slide_1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="acr-main-services">
+          <div class="acr-services-content cre-full acr-gridcontent">
+            <div class="acr-services-desc acr-gridcontent-desc">
+              <h1>Remodelación</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="acr-services-img acr-gridcontent-img">
+              <img src="../../img/slide_2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="acr-main-aboutus">
+          <div class="acr-aboutus-content cre-full acr-gridcontent">
+            <div class="acr-aboutus-desc acr-gridcontent-desc">
+              <h1>Diseño</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="acr-aboutus-img acr-gridcontent-img ">
+              <img src="../../img/slide_3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="acr-footer">
       <div class= "footer">
@@ -121,9 +169,6 @@
     </section>
 
     <script src="/js/home/acr-home.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      carousel();
-    </script>
 
   </body>
 </html>
