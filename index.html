@@ -1,139 +1,145 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACR Edificaciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Foundation Compressed CSS -->
+    <link rel="stylesheet" href="/assets/foundation/css/foundation.min.css" />
+    <!-- Font Awesome Compressed CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/fonts/home-style.css">
     <link rel="stylesheet" href="css/home/home-style.css">
-    <style>
-</style>
   </head>
   <body>
+
     <section class="acr-navmain">
-      <div class="container">
-        <nav class="navbar is-transparent">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="http://bulma.io">
-              <img src="/img/acr-logo-alt.png" alt="ACR Edificaciones">
-            </a>
 
-            <a class="navbar-item is-hidden-desktop" href="https://facebook.com/" target="_blank">
-              <span class="icon" style="color: #333;">
-                <i class="fa fa-facebook"></i>
-              </span>
-            </a>
+      <!-- Start of body below -->
 
-            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-              <span class="icon" style="color: #55acee;">
-                <i class="fa fa-twitter"></i>
-              </span>
-            </a>
+      <div class="responsive-nav-social-mobile" data-responsive-toggle="responsive-nav-social" data-hide-for="medium">
+        <div class="responsive-nav-social-mobile-left">
+          <ul class="menu">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="responsive-nav-social-mobile-right">
+          <button class="menu-icon" type="button" data-toggle="responsive-nav-social"></button>
+        </div>
+      </div>
 
-            <div class="navbar-burger burger" data-target="navMenubd-example">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      <div data-sticky-container>
+        <div data-sticky-container>
+        <div class="top-bar responsive-nav-social" id="responsive-nav-social" data-sticky data-margin-top="0">
+          <div class="top-bar-left responsive-nav-social-left" id="responsive-menu">
+            <ul class="menu menu-hover-lines">
+              <li><img src="/assets/img/home/acr-logo.png" height="33" width="43" alt=""></li>
+              <li class="menu-text">ACR Edificaciones</li>
+              <li class="active"><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Políticas de Privacidad</a></li>
+              <li><a href="#">Contáctanos</a></li>
+
+            </ul>
           </div>
-
-          <div class="navbar-menu ">
-          <!-- navbar start, navbar end -->
-            <a class="navbar-item">
-              Inicio
-            </a>
-            <a class="navbar-item">
-              Nosotros
-            </a>
-            <a class="navbar-item">
-              Servicios
-            </a>
-            <a class="navbar-item">
-              Proyectos
-            </a>
-            <a class="navbar-item">
-              Privacidad
-            </a>
-            <a class="navbar-item">
-              Contacta
-            </a>
+          <div class="top-bar-right responsive-nav-social-right hide-for-small-only">
+            <ul class="menu">
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
           </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="acr-hero">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="/assets/img/home/acr-slide-1.jpg" alt="slide-1">
+            <!--  <figcaption class="orbit-caption"></figcaption> -->
+
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" <img class="orbit-image" src="/assets/img/home/acr-slide-2.jpg" alt="slide-2">
+            <!-- <figcaption class="orbit-caption"></figcaption> -->
+
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" <img class="orbit-image" src="/assets/img/home/acr-slide-3.jpg" alt="slide-3">
+            <!--  <figcaption class="orbit-caption"></figcaption> -->
+
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
         </nav>
       </div>
     </section>
 
-
-    <section class="acr-hero">
-      <div class="container">
-        <div class="w3-content w3-display-container">
-          <img class="mySlides" src="/img/slide_1.jpg">
-          <img class="mySlides" src="/img/slide_2.jpg">
-          <img class="mySlides" src="/img/slide_3.jpg">
-
-          <div class="w3-content w3-display-container">
-            <img class="mySlides" src="/img/slide_1.jpg" style="width:100%">
-            <img class="mySlides" src="/img/slide_2.jpg" style="width:100%">
-            <img class="mySlides" src="/img/slide_3.jpg" style="width:100%">
-
-
-
-            <div class="acr-slideshow-buttons  w3-text-white w3-display-bottommiddle" style="width:100%">
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-
     <section class="acr-main">
-      <div class="acr-main-title container">
-        <div class="acr-title-content cre-full acr-flexcontent acr-flexposition-center">
-          <h1 class="acr-font-browa">ACR Edificaciones</h1>
-        </div>
-        <hr class="acr-hr">
-      </div>
+      <div class="acr-main-content grid-container">
 
-      <div class="acr-main-content container">
-        <div class="acr-main-projects">
-          <div class="acr-projects-content cre-full acr-gridcontent">
-            <div class="acr-projects-desc acr-gridcontent-desc">
-              <h1>Construcción</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="acr-projects-img acr-gridcontent-img">
-              <img src="../../img/slide_1.jpg" alt="">
-            </div>
+        <div class="acr-brandtitle">
+          <div class="acr-brandtitle-content acr-flexcontent acr-flex-center">
+            <h1>ACR Edificaciones</h1>
+            <h4>Le ofrece los servicios:</h4>
           </div>
         </div>
+        <hr>
+        <!--  -->
+        <div class="acr-gridlayout-slideis3to1 acr-gridheight-main-is1 acr-gridlayout-gap40">
+          <!--  -->
+          <div class="acr-gridlayout-slideis3to1-is1">
+            <div class="acr-gridlayout-slideis1to2">
+              <div class="acr-slideis1to2-is1">
+                <h3>Proyectos arquitectónicos.</h3>
+                <p class="text-justify"> Diseñamos, desarrollamos y gestionamos proyectos arquitectónicos en
+ donde, el espacio, confort y satisfacción del cliente es nuestra prioridad.</p>
+              </div>
+              <div class="acr-slideis1to2-is2">
+                <img src="/assets/img/home/acr-projects.jpeg" alt="">
+              </div>
 
-        <div class="acr-main-services">
-          <div class="acr-services-content cre-full acr-gridcontent">
-            <div class="acr-services-desc acr-gridcontent-desc">
-              <h1>Remodelación</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="acr-services-img acr-gridcontent-img">
-              <img src="../../img/slide_2.jpg" alt="">
             </div>
           </div>
-        </div>
-
-        <div class="acr-main-aboutus">
-          <div class="acr-aboutus-content cre-full acr-gridcontent">
-            <div class="acr-aboutus-desc acr-gridcontent-desc">
-              <h1>Diseño</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!--  -->
+          <div class="acr-slideis3to1-is2">
+            <div class="acr-gridlayout-slideis1to2">
+              <div class="acr-slideis1to2-is1">
+                <h3>Edificación (construcción).</h3>
+                <p class="text-justify">Gestionamos y desarrollamos proyectos de cualquier magnitud.</p>
+              </div>
+              <div class="acr-slideis1to2-is2">
+                <img src="/assets/img/home/acr-services.jpeg" alt="">
+              </div>
             </div>
-            <div class="acr-aboutus-img acr-gridcontent-img ">
-              <img src="../../img/slide_3.jpg" alt="">
+          </div>
+          <!--  -->
+          <div class="acr-slideis3to1-is3">
+            <div class="acr-gridlayout-slideis1to2">
+              <div class="acr-slideis1to2-is1">
+                <h3>Elaboración de presupuestos.</h3>
+                <p class="text-justify">Presentamos los análisis y distintos tipos de gastos que se tendrán durante la construcción de la obra.</p>
+              </div>
+              <div class="acr-slideis1to2-is2">
+                <img src="/assets/img/home/acr-budgets.jpeg" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -141,34 +147,69 @@
     </section>
 
     <section class="acr-footer">
-      <div class= "footer">
-        <div class="container">
-          <div class="content has-text-centered">
-            <p>
-             <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-           </p>
-           <p>
-             <a class="icon" href="https://github.com/jgthms/bulma">
-               <i class="fa fa-github"></i>
-             </a>
-           </p>
-            <div class="acr-footer-content acr-layout-grid">
-              <div class="acr-footer image">
+      <div class="acr-footer-content">
+        <div class="acr-footer-slideis1">
+          <!-- 3 Columnas 1 Renglon -->
+          <div class="acr-gridlayout-slideis3to1 acr-gridheight-footer-is1 grid-container acr-gridlayout-gap20">
+            <div class="acr-slideis3to1-is1">
+              <h3>ACR Edificaciones</h3>
+              <p class="text-justify">Es un despacho de ingeniería y arquitectura, capaces de resolver con calidad, innovación y análisis de proyectos arquitectónicos y de edificación.</p>
+            </div>
+            <div class="acr-slideis3to1-is2">
+              <h5>Contacto</h5>
+               <p class="text-justify"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> División del Norte #242 Col. Sn Miguel Lagos de Moreno, Jalisco.</p>
+               <p class="text-justify"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> 01 474-741-7990</p>
+               <p class="text-justify"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> acrisio@acr.com</p>
 
+            </div>
+            <div class="acr-slideis3to1-is3">
+              <h5>Siguenos en:</h5>
+              <a href="#" class="social-icon-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a>
 
-              </div>
-              <div class="acr-footer-links">
+              <a href="#" class="social-icon-button facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a>
 
-              </div>
+              <a href="#" class="social-icon-button gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></i><span></span></a>
             </div>
           </div>
         </div>
+
+
+        <div class="acr-footer-slideis2">
+          <!-- 2 Columnas 1 Renglon -->
+          <div class="acr-gridlayout-slideis2to1 acr-gridheight-footer-is2 grid-container">
+            <div class="acr-slideis2to1-is1">
+              <div class="acr-brand-year ">
+                <p>© 2017 ACR Edificaciones</p>
+              </div>
+            </div>
+            <div class="acr-slideis2to1-is2 ">
+              <ul class="menu ">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Contáctanos</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <script src="/js/home/acr-home.js" charset="utf-8"></script>
 
+
+
+    <script src="/assets/foundation/js/vendor/jquery.js"></script>
+    <script src="/assets/foundation/js/vendor/what-input.js"></script>
+    <script src="/assets/foundation/js/vendor/foundation.min.js"></script>
+    <script src="/js/home/acr-home.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- Foundation Compressed JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>-->
   </body>
 </html>
