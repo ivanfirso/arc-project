@@ -2,104 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-.responsive-nav-social-mobile {
-  background: #d7d7d7;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+.top-bar, .top-bar ul {
+    background-color: #fff;
 }
-
-.responsive-nav-social-mobile .responsive-nav-social-mobile-left {
-  -webkit-flex: 1 0 0;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
-}
-
-.responsive-nav-social-mobile .responsive-nav-social-mobile-left li {
-  font-size: 1.5rem;
-}
-
-.responsive-nav-social-mobile .responsive-nav-social-mobile-left li .fa {
-  color: #8a8a8a;
-  margin-right: -0.7rem;
-}
-
-.responsive-nav-social-mobile .responsive-nav-social-mobile-right .menu-icon {
-  margin-right: 1rem;
-}
-
-.responsive-nav-social-mobile .responsive-nav-social-mobile-right .menu-icon::after {
-  padding-right: 1.5rem;
-  background: #4ec6cd;
-  box-shadow: 0 7px 0 #4ec6cd, 0 14px 0 #4ec6cd;
-}
-
-.responsive-nav-social {
-  padding: 1rem;
-  background-color: #fff;
-}
-
-.responsive-nav-social.is-stuck {
-  width: 100%;
-  box-shadow: 0px 4px 10px -2px rgba(128, 128, 128, 0.68);
-}
-
-.responsive-nav-social a {
-  color: #8a8a8a;
-  font-size: 0.8rem;
-}
-
-.responsive-nav-social a:hover {
-  color: #4ec6cd;
-  transition: color 0.2s ease-in;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .responsive-nav-social .menu li a {
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    color: #4ec6cd;
-  }
-  .responsive-nav-social li {
-    border-bottom: 3px solid #4ec6cd;
-  }
-  .responsive-nav-social li:last-of-type {
-    border: 0;
-  }
-  .responsive-nav-social .responsive-nav-social-left {
-    width: 100%;
-  }
-  .responsive-nav-social .responsive-nav-social-left .menu.vertical a {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.responsive-nav-social .responsive-nav-social-right a {
-  padding-right: 0.1rem;
-}
-
-.responsive-nav-social i.fa {
-  font-size: 1.3rem;
-  color: #8a8a8a;
-}
-
-.responsive-nav-social i.fa:hover {
-  color: #4ec6cd;
-  transition: color 0.2s ease-in;
-}
-
-.sticky-container {
-  width: 100%;
-}
-
-
 
 
 
@@ -114,7 +19,7 @@ body {
 
 .menu-hover-lines li a {
   padding: 0.75rem 0;
-  color: rgba(10, 10, 10, 0.5);
+  /*color: rgba(10, 10, 10, 0.5);*/
   position: relative;
   margin-left: 1rem;
 }
@@ -129,11 +34,12 @@ body {
 
 .menu-hover-lines a:before,
 .menu-hover-lines a::after {
-  height: 3px;
+  height: 1px;
   position: absolute;
   content: '';
   transition: all 0.35s ease;
-  background-color: #1779ba;
+  /*background-color: #1779ba;*/
+  background-color: #21338E;
   width: 0;
 }
 
@@ -159,6 +65,83 @@ body {
 .menu-hover-lines .active a::after {
   width: 100%;
 }
+
+
+
+
+.responsive-nav-social-mobile {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.responsive-nav-social-mobile .responsive-nav-social-mobile-left {
+  flex: 1 0 0;
+}
+
+.responsive-nav-social-mobile .responsive-nav-social-mobile-left li {
+  font-size: 1.5rem;
+}
+
+.responsive-nav-social-mobile .responsive-nav-social-mobile-left li .fa {
+  color: #8a8a8a;
+  margin-right: -0.7rem;
+}
+
+.responsive-nav-social-mobile .responsive-nav-social-mobile-right .menu-icon {
+  margin-right: 1rem;
+}
+
+.responsive-nav-social-mobile .responsive-nav-social-mobile-right .menu-icon::after {
+  padding-right: 1.5rem;
+  background-color:  #8a8a8a;
+  box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a;
+}
+
+.responsive-nav-social {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.responsive-nav-social.is-stuck {
+  width: 100%;
+  box-shadow: 0px 4px 10px -2px rgba(128, 128, 128, 0.68);
+}
+
+.responsive-nav-social a {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.responsive-nav-social a:hover {
+  color: #4ec6cd;
+  transition: color 0.2s ease-in;
+}
+
+
+.responsive-nav-social .responsive-nav-social-right a {
+  padding-right: 0.1rem;
+}
+
+.responsive-nav-social i.fa {
+  font-size: 1.3rem;
+  color: #8a8a8a;
+}
+
+.responsive-nav-social i.fa:hover {
+  /*color: #4ec6cd 21338E;*/
+  color: #21338E; /* color cuando paso el puntero sobre los iconos facebook */
+  transition: color 0.2s ease-in;
+}
+
+.sticky-container {
+  width: 100%;
+}
+
+
+
+
 
 
 
@@ -360,8 +343,6 @@ Home: Footer
   color: #fff;
 }
 
-
-
 .acr-footer-slideis1 {
   background-color: #21338E;
   padding: 1%;
@@ -388,15 +369,97 @@ Home: Footer
   justify-content: flex-end;
 }
 
-.acr-brandtitle-content {
-
-}
-
-
-
 
 /*-------------------------------------*/
 
 .acr-hero {
   margin-bottom: 50px;
+}
+
+
+/*-------------------------------------
+Media Queries
+-------------------------------------*/
+@media screen and (max-width: 40em) {
+
+  .responsive-nav-social .menu ul {
+    border-top: 1px solid #8a8a8a;
+  }
+  .responsive-nav-social .menu li a {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #8a8a8a;
+  }
+  /*
+  .responsive-nav-social li {
+    border-bottom: 3px solid #21338E;
+  }*/
+
+  .responsive-nav-social li:last-of-type {
+    border: 0;
+  }
+
+
+  .responsive-nav-social .responsive-nav-social-left {
+    width: 100%;
+  }
+
+  .responsive-nav-social .responsive-nav-social-left .menu.vertical a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*-------------------------------------
+  Bloque CSS Grid 3 Columnas 1 Renglon a 1 columna 3 Renglones
+  -------------------------------------*/
+  .acr-gridlayout-slideis3to1 {
+    grid-template-columns: 1fr; /*Numero de columnas */
+    grid-template-rows:  1fr 1fr 1fr;
+  }
+
+  .acr-slideis3to1-is1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .acr-slideis3to1-is2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .acr-slideis3to1-is3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+
+  .acr-gridheight-footer-is1 {
+    grid-template-rows: 150px;
+  }
+  /*-------------------------------------
+  Bloque CSS Grid 2 Columnas 1 Renglon -> 1 columna 2 renglones
+  -------------------------------------*/
+
+  .acr-gridlayout-slideis2to1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .acr-slideis2to1-is1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .acr-slideis2to1-is2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .acr-brand-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
