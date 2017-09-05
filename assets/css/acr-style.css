@@ -404,6 +404,21 @@ ACR: Footer
   color:#fff;
 }
 
+.acr-imagen-projects figure {
+	background: #00206E;
+}
+
+.acr-imagen-projects figure img {
+ opacity: 1;
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+}
+.acr-imagen-projects figure:hover img {
+ opacity: .5;
+}
+
+
+
 
 
 /*-------------------------------------*/
