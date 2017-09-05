@@ -2,12 +2,22 @@
   grid-template-rows: 500px;
 }
 
+.acr-gridheight-gallery {
+  grid-template-rows: 300px 300px;
+}
+
 .acr-gridheight-footercont{
   grid-template-rows: 80%;
 }
+/*-------------------------------------
+ACR: Main Content
+-------------------------------------*/
+.acr-main {
+
+}
 
 .acr-main-content {
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .acr-contact-map {
