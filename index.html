@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Foundation Compressed CSS-->
     <link rel="stylesheet" href="/assets/foundation/css/foundation.min.css" />
+    <!-- ACR Projects CSS Style-->
+    <link rel="stylesheet" href="/assets/css/acr-style.css">
     <!-- ACR Home CSS-->
-    <link rel="stylesheet" href="/assets/css/fonts/home-style.css">
     <link rel="stylesheet" href="/assets/css/home/home-style.css">
+    <link rel="stylesheet" href="/assets/css/acr-queries.css">
   </head>
   <body>
-
-    <section class="acr-navmain">
-
+    <section class="acr-navbar">
       <!-- Start of body below -->
-
       <div class="responsive-nav-social-mobile" data-responsive-toggle="responsive-nav-social" data-hide-for="medium">
         <div class="responsive-nav-social-mobile-left">
           <ul class="menu">
@@ -35,21 +34,17 @@
       </div>
 
       <div data-sticky-container>
-        <div data-sticky-container>
         <div class="top-bar responsive-nav-social" id="responsive-nav-social" data-sticky data-margin-top="0">
           <div class="top-bar-left responsive-nav-social-left" id="responsive-menu">
             <ul class="menu vertical medium-horizontal menu-hover-lines">
-              <!--
-
               <li><img src="/assets/img/home/acr-logo.png" height="33" width="43" alt=""></li>
-              <li class="menu-text">ACR Edificaciones</li> -->
+              <li class="menu-text">ACR Edificaciones</li>
               <li class="active"><a href="#">Inicio</a></li>
               <li><a href="/aboutus.html">Nosotros</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Proyectos</a></li>
-              <li><a href="#">Políticas de Privacidad</a></li>
-              <li><a href="#">Contáctanos</a></li>
-
+              <li><a href="/services.html">Servicios</a></li>
+              <li><a href="/projects.html">Proyectos</a></li>
+              <li><a href="/privacy.html">Políticas de Privacidad</a></li>
+              <li><a href="/contact.html">Contáctanos</a></li>
             </ul>
           </div>
           <div class="top-bar-right responsive-nav-social-right hide-for-small-only">
@@ -62,12 +57,10 @@
           </div>
         </div>
       </div>
-      </div>
-
     </section>
 
     <section class="acr-hero">
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+      <div class="orbit grid-container" role="region" aria-label="Favorite Space Pictures" data-orbit>
         <ul class="orbit-container">
           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -97,7 +90,6 @@
 
     <section class="acr-main">
       <div class="acr-main-content grid-container">
-
         <div class="acr-brandtitle">
           <div class="acr-brandtitle-content acr-flexcontent acr-flex-center">
             <h1>ACR Edificaciones</h1>
@@ -105,10 +97,8 @@
           </div>
         </div>
         <hr>
-        <!--  -->
-        <div class="acr-gridlayout-slideis3to1 acr-gridheight-main-is1 acr-gridlayout-gap40">
-          <!--  -->
-          <div class="acr-gridlayout-slideis3to1-is1">
+        <div class="acr-gridlayout-slideis3to1 acr-gridrows-home acr-gridheight-main acr-gridlayout-gap40">
+          <div class="acr-slideis3to1-is1">
             <div class="acr-gridlayout-slideis1to2">
               <div class="acr-slideis1to2-is1">
                 <h3>Proyectos arquitectónicos.</h3>
@@ -118,10 +108,8 @@
               <div class="acr-slideis1to2-is2">
                 <img src="/assets/img/home/acr-projects.jpeg" alt="">
               </div>
-
             </div>
           </div>
-          <!--  -->
           <div class="acr-slideis3to1-is2">
             <div class="acr-gridlayout-slideis1to2">
               <div class="acr-slideis1to2-is1">
@@ -133,7 +121,6 @@
               </div>
             </div>
           </div>
-          <!--  -->
           <div class="acr-slideis3to1-is3">
             <div class="acr-gridlayout-slideis1to2">
               <div class="acr-slideis1to2-is1">
@@ -149,28 +136,38 @@
       </div>
     </section>
 
+
+
     <section class="acr-footer">
       <div class="acr-footer-content">
         <div class="acr-footer-slideis1">
           <!-- 3 Columnas 1 Renglon -->
-          <div class="acr-gridlayout-slideis3to1 acr-gridheight-footer-is1 grid-container acr-gridlayout-gap20">
+          <div class="acr-gridlayout-slideis3to1 acr-gridrows-footer acr-gridheight-footer-is1 grid-container acr-gridlayout-gap20">
             <div class="acr-slideis3to1-is1">
               <h3>ACR Edificaciones</h3>
               <p class="text-justify">Es un despacho de ingeniería y arquitectura, capaces de resolver con calidad, innovación y análisis de proyectos arquitectónicos y de edificación.</p>
             </div>
             <div class="acr-slideis3to1-is2">
               <h5>Contacto</h5>
-               <p class="text-justify"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> División del Norte #242 Col. Sn Miguel Lagos de Moreno, Jalisco.</p>
-               <p class="text-justify"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> 01 474-741-7990</p>
-               <p class="text-justify"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> acrisio@acr.com</p>
-
+              <div class="acr-contactfooter acr-gridlayout-slideis3to1 acr-gridrows-footercont acr-gridheight-footercont acr-gridlayout-gap10">
+                <div class="acr-slideis3to1-is1 ">
+                  <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                  <p><a href="/contact.html">División del Norte #242 <br> Col. San Miguel <br>Lagos de Moreno, Jalisco.</a></p>
+                </div>
+                <div class="acr-slideis3to1-is2 ">
+                  <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                  <p><a href="#">1 (800) 555-5555</a></p>
+                </div>
+                <div class="acr-slideis3to1-is3 ">
+                  <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                  <p><a href="#">yetirules@fakeemail.com</a></p>
+                </div>
+              </div>
             </div>
             <div class="acr-slideis3to1-is3">
               <h5>Siguenos en:</h5>
               <a href="#" class="social-icon-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a>
-
               <a href="#" class="social-icon-button facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a>
-
               <a href="#" class="social-icon-button gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></i><span></span></a>
             </div>
           </div>
@@ -186,32 +183,28 @@
               </div>
             </div>
             <div class="acr-slideis2to1-is2 ">
-              <ul class="menu ">
-                <li><a href="#">Inicio</a></li>
+              <ul class="menu menu-footer">
+                <li><a href="/">Inicio</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Políticas de Privacidad</a></li>
-                <li><a href="#">Contáctanos</a></li>
+                <li><a href="/services.html">Servicios</a></li>
+                <li><a href="/projects.html">Proyectos</a></li>
+                <li><a href="/privacy.html">Políticas de Privacidad</a></li>
+                <li><a href="/contact.html">Contáctanos</a></li>
               </ul>
 
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
 
-
-    <!-- 2 Columnas 1 Renglon -->
     <script src="/assets/foundation/js/vendor/jquery.js"></script>
     <script src="/assets/foundation/js/vendor/what-input.js"></script>
     <script src="/assets/foundation/js/vendor/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
-    <!-- Foundation Compressed JavaScript
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>-->
+
   </body>
 </html>
