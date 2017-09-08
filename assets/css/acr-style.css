@@ -1,3 +1,8 @@
+body {
+  font-family: 'DosisL';
+  font-size: 18px;
+}
+
 h1, h2, h3 {
  font-family: 'PoiretOne', sans-serif;
  text-transform: uppercase;
@@ -336,7 +341,7 @@ Flex Content
 
 
 /*-------------------------------------
-Bloque CSS Grid 3 Columnas N Renglon
+Layout CSSGrid 3 Columnas N Renglon
 -------------------------------------*/
 .lay-grid-slideis3to1 {
   display: grid;
@@ -378,7 +383,7 @@ Bloque CSS Grid 3 Columnas N Renglon
 
 
 /*-------------------------------------
-Bloque CSS Grid 2 Columnas 1 Renglon
+Layout CSSGrid 2 Columnas 1 Renglon
 -------------------------------------*/
 .lay-grid-slideis2to1 {
   display: grid;
@@ -398,7 +403,7 @@ Bloque CSS Grid 2 Columnas 1 Renglon
 }
 
 /*-------------------------------------
-Subloque CSS Grid 1 Columnas 2 Renglones
+Layout CSSGrid 1 Columnas 2 Renglones
 -------------------------------------*/
 .lay-grid-slideis1to2 {
   display: grid;
@@ -414,7 +419,32 @@ Subloque CSS Grid 1 Columnas 2 Renglones
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
-/*-------------------------------------*/
+
+
+/*-------------------------------------
+Layout CSSGrid 2 Columnas 2 Renglones
+-------------------------------------*/
+.lay-grid-slideis2to2  {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 500px;
+  height: 100%;
+}
+
+.grid-slideis2to2-is1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.grid-slideis2to2-is2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.grid-slideis2to2-is3 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+
 
 
 /*-------------------------------------
