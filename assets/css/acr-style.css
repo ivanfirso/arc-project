@@ -1,5 +1,21 @@
-body {
-  font-family: 'Lato', sans-serif;
+h1, h2, h3 {
+ font-family: 'PoiretOne', sans-serif;
+ text-transform: uppercase;
+}
+
+h4, h5 {
+  font-family: 'Regencie', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'DosisL';
+  font-size: 18px;
+}
+
+.text-logo{
+  font-family: 'PoiretOne', sans-serif;
+  text-transform: uppercase;
 }
 
 /*-------------------------------------
@@ -11,6 +27,13 @@ ACR: Nav Bar
 
 .top-bar, .top-bar ul {
     background-color: #fff;
+}
+
+.top-bar, .top-bar ul a {
+    font-family: 'PoiretOne', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
 }
 
 
@@ -117,7 +140,7 @@ ACR: Nav Bar
 }
 
 .responsive-nav-social a:hover {
-  color: #4ec6cd;
+  color: #21338E;
   transition: color 0.2s ease-in;
 }
 
@@ -219,189 +242,6 @@ ACR: Nav Bar
 }
 
 
-
-
-/*-------------------------------------
-Flex Content
--------------------------------------*/
-.acr-flexcontent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.acr-flexcontent-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-
-.acr-flex-center {
-  justify-content: center;
-}
-
-.acr-flex-start {
-  justify-content: flex-start;
-}
-
-.acr-flex-end {
-  justify-content: flex-end;
-}
-
-/*-------------------------------------
-Grid Content
--------------------------------------*/
-
-/*-------------------------------------
-Bloque CSS Grid 3 Columnas 1 Renglon
--------------------------------------*/
-.acr-gridlayout-slideis3to1 {
-  display: grid;
- /*Numero de columnas en el layout */
-  height: 100%;
-}
-
-.acr-slideis3to1-is1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-
-}
-
-.acr-slideis3to1-is2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-
-}
-
-.acr-slideis3to1-is3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-
-}
-
-.acr-slideis3to1-is4 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.acr-slideis3to1-is5 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.acr-slideis3to1-is6 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-/*-------------------------------------*/
-
-
-
-/*-------------------------------------
-Bloque CSS Grid 2 Columnas 1 Renglon
--------------------------------------*/
-.acr-gridlayout-slideis2to1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  height: 100%;
-}
-
-.acr-slideis2to1-is1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.acr-slideis2to1-is2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-/*-------------------------------------
-Subloque CSS Grid 1 Columnas 2 Renglones
--------------------------------------*/
-.acr-gridlayout-slideis1to2 {
-  display: grid;
-  grid-template-columns: 1fr; /*Numero de columnas en el layout */
-  height: 100%;
-}
-
-.acr-slideis1to2-is1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-.acr-slideis1to2-is2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-/*-------------------------------------*/
-
-
-/*-------------------------------------
-Grid height Rows
--------------------------------------*/
-
-
-
-
-
-/*-------------------------------------
-Grid Gap
--------------------------------------*/
-.acr-gridlayout-gap40 {
-  grid-gap: 40px;
-}
-
-.acr-gridlayout-gap20 {
-  grid-gap: 20px;
-}
-
-.acr-gridlayout-gap10 {
-  grid-gap: 10px;
-}
-
-/*-------------------------------------*/
-
-
-
-
-/*-------------------------------------
-ACR: Footer
--------------------------------------*/
-
-.acr-footer {
-  color: #fff;
-}
-
-.acr-footer-slideis1 {
-  background-color: #00206E;
-  padding: 1%;
-}
-.acr-footer-slideis2 {
-  background-color: #8B8B8B;
-}
-
-.acr-gridheight-footer-is1 {
-  grid-template-rows: 200px;
-}
-
-.acr-gridheight-footer-is2 {
-  grid-template-rows: 50px;
-}
-
-.menu-footer a{
-  color:#fff;
-}
-
-.acr-contactfooter a {
-  color:#fff;
-}
-
-
-
-
-
 .column::after {
 	content: '';
 	clear: both;
@@ -464,8 +304,256 @@ figure:hover+span {
 	opacity: .5;
 }
 
-
-
-
-
 /*-------------------------------------*/
+
+/*-------------------------------------
+Flex Content
+-------------------------------------*/
+.lay-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lay-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+
+
+/*-------------------------------------
+Bloque CSS Grid 3 Columnas N Renglon
+-------------------------------------*/
+.lay-grid-slideis3to1 {
+  display: grid;
+  height: 100%;
+}
+
+.grid-slideis3to1-is1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.grid-slideis3to1-is2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.grid-slideis3to1-is3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+
+}
+
+.grid-slideis3to1-is4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.grid-slideis3to1-is5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.grid-slideis3to1-is6 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+/*-------------------------------------*/
+
+
+
+/*-------------------------------------
+Bloque CSS Grid 2 Columnas 1 Renglon
+-------------------------------------*/
+.lay-grid-slideis2to1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+.grid-slideis2to1-is1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.grid-slideis2to1-is2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/*-------------------------------------
+Subloque CSS Grid 1 Columnas 2 Renglones
+-------------------------------------*/
+.lay-grid-slideis1to2 {
+  display: grid;
+  grid-template-columns: 1fr; /*Numero de columnas en el layout */
+  height: 100%;
+}
+
+.grid-slideis1to2-is1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.grid-slideis1to2-is2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+/*-------------------------------------*/
+
+
+/*-------------------------------------
+Grid Gap
+-------------------------------------*/
+.grid-layout-gap40 {
+  grid-gap: 40px;
+}
+
+.grid-layout-gap20 {
+  grid-gap: 20px;
+}
+
+.grid-layout-gap10 {
+  grid-gap: 10px;
+}
+/*-------------------------------------*/
+
+/*-------------------------------------
+ACR: Home Page Main Content
+-------------------------------------*/
+.grid-columns-homemain {
+  grid-template-columns: repeat(3, 1fr); /*Numero de columnas en el layout */
+}
+
+.grid-rows-homemain {
+  grid-template-rows: 1fr;
+}
+
+
+/*-------------------------------------
+ACR: Footer
+-------------------------------------*/
+.menu-footer a {
+  font-family: 'Regencie', sans-serif;
+}
+
+/* Footer - Brand */
+.footer-slideis1 {
+  background-color: #00206E;
+  padding: 1%;
+}
+
+.brand-contacts-content a {
+  color: #fff;
+}
+/* Numero de columnas Footer - Brand */
+.grid-columns-brand {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+/* Numero de columnas Footer - Brand */
+.grid-rows-brand {
+  grid-template-rows: 180px;
+}
+
+/* Contact */
+.grid-columns-contact {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-rows-contact {
+  grid-template-rows: 80%;
+}
+
+/* Social */
+.brand-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer - Links */
+.footer-slideis2 {
+  background-color: #8B8B8B;
+}
+
+
+/* Numero de columnas Footer - Brand */
+.grid-rows-links {
+  grid-template-rows: 50px;
+}
+
+
+.acr-footer {
+  color: #fff;
+}
+
+.menu-footer a{
+  color:#fff;
+}
+
+
+/* ACR: Footer Contacts Content */
+.acr-contacts-content a {
+  color:#fff;
+}
+
+/* Footer Contacts Numero de columnas */
+.acr-gridrows-contacts {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer Contacts Altura de filas */
+.acr-gridheight-contacts{
+  grid-template-rows: 80%;
+}
+
+
+.acr-gridheight-main{
+  grid-template-rows: 500px;
+}
+
+.acr-gridheight-gallery {
+  grid-template-rows: 300px 300px;
+}
+
+
+/*-------------------------------------
+ACR: Main Content
+-------------------------------------*/
+.acr-main {
+
+}
+
+.acr-main-content {
+  min-height: 400px;
+}
+
+.acr-contact-map {
+  height: 600px;
+}
+
+/*-------------------------------------
+Projects: Main Content
+-------------------------------------*/
+.acr-gridheight-projects{
+  grid-template-rows: 300px 400px;
+}
+
+.acr-gridrows-home {
+  grid-template-columns: repeat(3, 1fr);
+}
