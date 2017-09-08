@@ -31,72 +31,91 @@ Media Queries
     justify-content: center;
   }
 
-  /*-------------------------------------
-  Bloque CSS Grid 3 Columnas 1 Renglon a 1 columna 3 Renglones
-  -------------------------------------*/
-  .acr-gridlayout-slideis3to1 {
+
+  .lay-grid-slideis3to1 {
     grid-template-columns: 1fr; /*Numero de columnas */
     grid-template-rows:  1fr 1fr 1fr;
   }
 
-  .acr-slideis3to1-is1 {
+  .grid-slideis3to1-is1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .acr-slideis3to1-is2 {
+  .grid-slideis3to1-is2 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
-  .acr-slideis3to1-is3 {
+  .grid-slideis3to1-is3 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
 
-  .acr-slideis3to1-is4 {
+  .grid-slideis3to1-is4 {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
 
-  .acr-slideis3to1-is5 {
+  .grid-slideis3to1-is5 {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
   }
 
-  .acr-slideis3to1-is6 {
+  .grid-slideis3to1-is6 {
     grid-column: 1 / 2;
     grid-row: 6 / 7;
   }
 
 
-  /*-------------------------------------
-  Bloque CSS Grid 2 Columnas 1 Renglon -> 1 columna 2 renglones
-  -------------------------------------*/
+ .lay-grid-slideis2to1 {
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 2fr;
+ }
 
-  .acr-gridlayout-slideis2to1 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-  }
+ .grid-slideis2to1-is1 {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+ }
 
-  .acr-slideis2to1-is1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+ .grid-slideis2to1-is2 {
+   grid-column: 1 / 2;
+   grid-row: 2 / 3;
+ }
 
-  .acr-slideis2to1-is2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
 
-  .acr-brand-year {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+   /*-------------------------------------
+   ACR: Footer
+   -------------------------------------*/
 
-  .acr-gridheight-footer-is1 {
-    grid-template-rows: 150px;
+   /* Numero de columnas Footer - Brand */
+   .grid-rows-brand {
+     grid-template-rows: 120px;
+   }
+
+   .brand-contacts-content {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+   }
+
+   .contacts-addres {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+   }
+
+   .contacts-phone {
+     grid-column: 2 / 3;
+     grid-row: 1 / 2;
+   }
+
+   .contacts-email {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+   }
+
+  .brand-social {
+    flex-direction: row;
   }
 
 }
