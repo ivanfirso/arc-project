@@ -2,10 +2,6 @@
 Media Queries
 -------------------------------------*/
 @media only screen and  (min-width : 19.9375em) and (max-width : 29.9375em) {
-  body {
-    background-color: red;
-  }
-
   .responsive-nav-social .menu ul {
     border-top: 1px solid #8a8a8a;
   }
@@ -261,10 +257,6 @@ Media Queries
 }
 
 @media only screen and  (min-width : 30em) and (max-width : 47.938em) {
-  body {
-    background-color: violet;
-  }
-
   .contacts-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -288,10 +280,6 @@ Media Queries
 }
 
 @media only screen and  (min-width : 48em) and (max-width : 63.938em) {
-  body {
-    background-color: green;
-  }
-
 
   .contacts-content {
     display: grid;
