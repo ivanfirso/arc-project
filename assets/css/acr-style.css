@@ -1,25 +1,24 @@
 body {
-  font-family: 'DosisL';
-  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3 {
- font-family: 'PoiretOne', sans-serif;
+ font-family: 'Open Sans', sans-serif;
  text-transform: uppercase;
 }
 
 h4, h5 {
-  font-family: 'Regencie', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 
 p {
-  font-family: 'DosisL';
+  font-family: 'Open Sans';
   font-size: 18px;
 }
 
 .text-logo{
-  font-family: 'PoiretOne', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -35,7 +34,7 @@ ACR: Nav Bar
 }
 
 .top-bar, .top-bar ul a {
-    font-family: 'PoiretOne', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
     color: #000;
@@ -334,16 +333,16 @@ Flex Content
 .flex-end {
   justify-content: flex-end;
 }
-
 /*-------------------------------------
 Layout CSSGrid Gallery Projects
 -------------------------------------*/
 .grid-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 280px 280px 280px 280px 280px 280px 280px 280px 280px 280px;
+  grid-template-rows: repeat(3, 1fr);
+  /*grid-template-rows: 280px 280px 280px 280px 280px 280px 280px 280px 280px 280px;*/
   height: 100%;
-  grid-gap: 10px;
+  grid-gap: 0;
 }
 
 .gallery-item1 {
@@ -451,7 +450,6 @@ Layout CSSGrid Gallery Projects
   grid-column: 3 / 4;
   grid-row: 9 / 10;
 }
-
 
 
 /*-------------------------------------
@@ -627,7 +625,6 @@ Contact Page Desktop Layout
 }
 
 
-
 /*-------------------------------------
 ACR: Footer
 -------------------------------------*/
@@ -641,7 +638,7 @@ ACR: Footer
 }
 
 .menu-footer a {
-  font-family: 'Regencie', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Footer - ENTERPRISE */
@@ -649,6 +646,7 @@ ACR: Footer
   background-color: #00206E;
   padding: 1%;
 }
+
 
 .enterprise-content {
   color: #fff;
@@ -658,53 +656,45 @@ ACR: Footer
   color: #fff;
 }
 
-
-/*-------------------------------------
-ACR: Footer ENTERPRISE
--------------------------------------*/
-.enterprise-content {
+.enterprise-content  {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /*Numero de columnas */
-  grid-template-rows:  200px;
-  grid-gap: 20px;
-  height: 100%;
+  grid-template-columns: 1fr; /*Numero de columnas */
+  grid-template-rows:  1fr 2fr 1fr;
+  grid-gap: 0;
 }
 
-.brand {
+.enterprise-content .brand {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-.contacts {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+.enterprise-content .contacts {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
-.social {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+.enterprise-content .social {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  align-items: center;
+
 }
 
 
-.contacts-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+.links-content {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.contacts-content .address {
+.links-content .year-made {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-.contacts-content .phone {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.contacts-content .email {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+.links-content .sub-menu {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 /*-------------------------------------
@@ -712,9 +702,11 @@ ACR: Footer LINKS
 -------------------------------------*/
 .footer-slideis2 {
   background-color: #8B8B8B;
+  padding: 1%;
 }
 
-.links-content .year-made {
+.links-content .year-made,
+.links-content .menu-footer {
   display: flex;
   align-items: center;
   justify-content: center;
