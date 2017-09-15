@@ -2,6 +2,10 @@
 Media Queries
 -------------------------------------*/
 @media only screen and  (min-width : 19.9375em) and (max-width : 29.9375em) {
+  body {
+    background-color: none;
+  }
+
   .responsive-nav-social .menu ul {
     border-top: 1px solid #8a8a8a;
   }
@@ -100,42 +104,14 @@ Media Queries
 
 
 
-  /*-------------------------------------
-  About Us Page Mobile Layout
-  -------------------------------------*/
-  .aboutus-content {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 200px 550px;
-  }
-
-  .aboutus-content .title {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .aboutus-content .image {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    background-image: url('../img/aboutus/acr-aboutus-alt.jpeg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  .aboutus-content .image img {
-    display: none;
-  }
-
-  .aboutus-content .desc {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-  }
-
 
   /*-------------------------------------
   Layout CSSGrid Gallery Projects
   -------------------------------------*/
+  .blockquote-content {
+    width: 100%;
+  }
+
   .grid-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -257,6 +233,10 @@ Media Queries
 }
 
 @media only screen and  (min-width : 30em) and (max-width : 47.938em) {
+  body {
+    background-color: none;
+  }
+
   .contacts-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -280,6 +260,71 @@ Media Queries
 }
 
 @media only screen and  (min-width : 48em) and (max-width : 63.938em) {
+  body {
+    background-color: none;
+  }
+
+  .aboutus-content {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 500px;
+    grid-gap: 15px;
+  }
+
+  .aboutus-content .title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .aboutus-content .desc {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .aboutus-content .image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: none;
+  }
+
+  .aboutus-content .image img {
+    display: inline-block;
+  }
+
+  .aboutus-content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*-------------------------------------
+  Services Page Layout
+  -------------------------------------*/
+  .services-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 350px 350px;
+  }
+
+  .services-title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .services-projects {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .services-building {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .services-budget {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+
+
 
   .contacts-content {
     display: grid;
@@ -305,32 +350,70 @@ Media Queries
 }
 
 @media only screen and  (min-width : 64em) {
-  .enterprise-content  {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /*Numero de columnas */
-    grid-template-rows:  1fr;
-    grid-gap: 10px;
+  body {
+    background-color: none;
   }
 
-  .enterprise-content .brand {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+
+  .aboutus-content {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 500px;
+    grid-gap: 20px;
   }
 
-  .enterprise-content .contacts {
+  .aboutus-content .title {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
-  .enterprise-content .social {
-    grid-column: 3 / 4;
+  .aboutus-content .desc {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .aboutus-content .image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: none;
+  }
+
+  .aboutus-content .image img {
+    display: inline-block;
+  }
+
+  .aboutus-content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*-------------------------------------
+  Services Page Layout
+  -------------------------------------*/
+  .services-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 350px;
+  }
+
+  .services-title {
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
 
-  .enterprise-content .social {
-    display: flex;
-    flex-direction: column;
+  .services-projects {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
+  .services-building {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .services-budget {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
 
 
   .contacts-content {

@@ -32,8 +32,38 @@ $(function() {                                     // DOM has loaded
         $("#modalWindow_5").load(url+" #"+id).foundation('open');
       } else if (id == 'acr-projects-image6' ) {
         $("#modalWindow_6").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image7' ) {
+        $("#modalWindow_7").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image8' ) {
+        $("#modalWindow_8").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image9' ) {
+        $("#modalWindow_9").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image10' ) {
+        $("#modalWindow_10").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image11' ) {
+        $("#modalWindow_11").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image12' ) {
+        $("#modalWindow_12").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image13' ) {
+        $("#modalWindow_13").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image14' ) {
+        $("#modalWindow_14").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image15' ) {
+        $("#modalWindow_15").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image16' ) {
+        $("#modalWindow_16").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image17' ) {
+        $("#modalWindow_17").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image18' ) {
+        $("#modalWindow_18").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image19' ) {
+        $("#modalWindow_19").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image20' ) {
+        $("#modalWindow_20").load(url+" #"+id).foundation('open');
+      } else if (id == 'acr-projects-image21' ) {
+        $("#modalWindow_21").load(url+" #"+id).foundation('open');
       } else {
-        alert ("selecciona algo");
+        alert("selecciona algo");
       }
     });
 });
