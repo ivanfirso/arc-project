@@ -503,7 +503,7 @@ About Us Page Layout
 .aboutus-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 200px 600px;
+  grid-template-rows: 60px 200px 1fr;
   grid-gap: 10px;
 }
 
