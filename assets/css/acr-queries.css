@@ -6,7 +6,6 @@ Media Queries
     background-color: none;
   }
 
-
   .responsive-nav-social .menu ul {
     border-top: 1px solid #8a8a8a;
   }
@@ -58,6 +57,30 @@ Media Queries
     background-color: none;
   }
 
+  /*-------------------------------------
+  Footer Page  Layout
+  -------------------------------------*/
+  .contacts-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contacts-content .address {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .contacts-content .phone {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .contacts-content .email {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
 
 }
 
@@ -70,7 +93,7 @@ Media Queries
   -------------------------------------*/
   .main-content {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 350px 350px;
+    grid-template-rows: 120px 1fr 350px;
   }
 
   .main-title {
@@ -132,7 +155,7 @@ Media Queries
   -------------------------------------*/
   .services-content {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 350px 350px;
+    grid-template-rows: 60px 1fr 350px;
   }
 
   .services-title {
@@ -153,7 +176,6 @@ Media Queries
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-
 
   /*-------------------------------------
   Layout CSSGrid Gallery Projects
@@ -272,6 +294,77 @@ Media Queries
     grid-row: 10 / 11;
   }
 
+  /*-------------------------------------
+  Contact Page  Layout
+  -------------------------------------*/
+  .acr-contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Numero de columnas en el layout */
+    grid-template-rows:  100px 400px 100px 400px 1fr 1fr;
+    grid-gap: 10px;
+    height: 100%;
+  }
+
+  .contact-card-title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+  }
+  .contact-card-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .contact-card-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .contact-map-title {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .contact-map-content {
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+  }
+
+  .contact-form-title {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .contact-form-content {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+
+  /*-------------------------------------
+  Footer Page  Layout
+  -------------------------------------*/
+
+  .contacts-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .contacts-content .address {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .contacts-content .phone {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .contacts-content .email {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
 
 
 }
@@ -286,7 +379,7 @@ Media Queries
   -------------------------------------*/
   .main-content {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120px 350px;
+    grid-template-rows: 120px 1fr 120px;
   }
 
   .main-title {
@@ -349,7 +442,7 @@ Media Queries
   -------------------------------------*/
   .services-content {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 350px;
+    grid-template-rows: 70px 1fr 70px;
   }
 
   .services-title {
@@ -516,9 +609,57 @@ Media Queries
     flex-direction: column;
   }
 
+  /*-------------------------------------
+  Contact Page  Layout
+  -------------------------------------*/
+  .acr-contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Numero de columnas en el layout */
+    grid-template-rows: 100px 400px 100px 500px 1fr 100px;
+    grid-gap: 10px;
+    height: 100%;
+  }
+
+  .contact-card-title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+  }
+  .contact-card-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .contact-card-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .contact-map-title {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .contact-map-content {
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+  }
+
+  .contact-form-title {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .contact-form-content {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
 
 
 
+  /*-------------------------------------
+  Footer Page  Layout
+  -------------------------------------*/
 
   .contacts-content {
     display: grid;

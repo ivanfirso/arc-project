@@ -334,45 +334,6 @@ Flex Content
 
 
 
-/*-------------------------------------
-Layout CSSGrid 2 Columnas 1 Renglon
--------------------------------------*/
-.lay-grid-slideis2to1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  height: 100%;
-}
-
-.grid-slideis2to1-is1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.grid-slideis2to1-is2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-/*-------------------------------------
-Layout CSSGrid 1 Columnas 2 Renglones
--------------------------------------*/
-.lay-grid-slideis1to2 {
-  display: grid;
-  grid-template-columns: 1fr; /*Numero de columnas en el layout */
-  grid-template-rows: 2fr 1fr;
-  height: 100%;
-}
-
-.grid-slideis1to2-is1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-
-}
-.grid-slideis1to2-is2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
 
 /*-------------------------------------
 Layout CSSGrid 1 Columnas 3 Renglones
@@ -730,11 +691,6 @@ Layout CSSGrid Gallery Projects
 }
 
 
-
-
-
-
-
 /*-------------------------------------
 Privacy Page  Layout
 -------------------------------------*/
@@ -744,19 +700,58 @@ Privacy Page  Layout
   justify-content: center;
 }
 
-
 /*-------------------------------------
 Contact Page  Layout
 -------------------------------------*/
-.contact-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.acr-contact-content {
+  display: grid;
+  grid-template-columns: 1fr; /*Numero de columnas en el layout */
+  grid-template-rows: 100px 300px 1fr 100px 1fr 100px 1fr;
+  grid-gap: 10px;
+  height: 100%;
 }
 
-.contact-map {
-  height: 500px;
-  margin-bottom: 100px;
+.contact-card-title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+}
+.contact-card-image {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.contact-card-content {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.contact-map-title {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.contact-map-content {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.contact-form-title {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+.contact-form-content {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+
+.contact-card-image {
+  background-image: url('../img/contact/acr-contact.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
